@@ -10,20 +10,14 @@ registerApplication(
 );
 
 registerApplication(
-  // Name of our single-spa application
   'home',
-  // loadingFunction
   () => import('./src/home/home.app'),
-  // activityFunction
   pathPrefix('/home')
 );
 
 registerApplication(
-  // Name of our single-spa application
   'vue',
-  // loadingFunction
-  () => import('./src/test/src/main.js'),
-  // activityFunction
+  () => import('./src/vue/src/main.js'),
   pathPrefix('/vue')
 );
 
